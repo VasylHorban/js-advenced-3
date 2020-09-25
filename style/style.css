@@ -1,0 +1,73 @@
+@import './reset.css';
+
+body {
+    background: #3e3d3c;
+}
+
+.tree-wrapper {
+    color: #f8efef;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tree-wrapper__item ul {
+    display: none;
+    transition: display ease 1s;
+}
+
+.tree-wrapper__item {
+    margin-top: 15px;
+}
+
+.tree-wrapper__link {
+    margin-left: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: color ease .3s;
+}
+.tree-wrapper__link:hover{
+    color: #90e690
+}
+
+.tree-wrapper__link-folder::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../img/folder.png);
+    background-size: cover;
+    top: 50%;
+    margin-top: -15px;
+    left: -40px;
+
+}
+
+.tree-wrapper__link-file::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../img/file.png);
+    background-size: cover;
+    top: 50%;
+    margin-top: -15px;
+    left: -40px;
+}
+
+.tree-wrapper__btn {
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform ease .6s;
+    background: none;
+    color: #fae781;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+}
+.tree-wrapper__btn:hover{
+    background: #6a6a6a
+}
